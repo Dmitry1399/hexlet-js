@@ -1,18 +1,11 @@
 
-import _ from 'lodash';
-
-const sum = (n) => {
-  if (n === 1) {
-    return 1;
+const g = { a: 1, b: 2, c: 3 };
+ 
+const q = (g) => {
+  for (const get of g) {
+console.log('12');
   }
  
-  return sum(n - 1) + n;
-};
-  
-
-
-console.log(sum(5))
-
-/* smallestDivisor(15); // 3
-smallestDivisor(17); // 17
- */
+ return get;
+}
+ console.log(q(g));
